@@ -41,5 +41,7 @@ function getYiYan(){
     .catch(console.error)
     setTimeout(getYiYan, 5000)
 }
-getYiYan()
+if(!import.meta.env.SSR){
+  getYiYan()
+} 
 </script>
