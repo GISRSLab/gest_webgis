@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "GEST WebGIS",
   description: "The Best Course Docs!",
-  base: '/gest-webgis/',
+  base: '/gest_webgis/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/imgs/logo.png',
