@@ -10,26 +10,36 @@ hero:
     alt: GEST WebGIS
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: WebGIS Examples
       link: /example/markdown-examples
     - theme: alt
-      text: API Examples
-      link: /api/api-examples
+      text: SuperMap Docs
+      link: /supermap/
 
 features:
-  - title: <img src= "./imgs/ArcGIS.png" alt="ArcGIS" class="inline-block"/>ArcGIS
-    icon: 👍
-    details: Use the ArcGIS Maps SDK for JavaScript to build compelling web apps that unlock your data’s potential with interactive user experiences and stunning 2D and 3D visualizations.
+  - title: <img src= "./imgs/ArcGIS.png" alt="ArcGIS" class="inline-block"/>&ensp;&ensp;ArcGIS
+    details: 使用ArcGIS API for JavaScript 开发高性能的二三维WebGIS应用
     link: https://developers.arcgis.com/javascript/latest/
     target: "_blank"
   - title: <img src= "./imgs/supermap.png" alt="SuperMap" class="inline-block"/>
-    icon: 😁
-    details: SuperMap iClient 是空间信息和服务的可视化交互开发平台，是SuperMap服务器系列产品的统一客户端。产品基于统一的架构体系，面向Web端和移动端提供了多种类型的SDK开发包，帮助用户快速构建网络富客户端和轻量级移动端GIS应用。
+    details: SuperMap iClient 是空间信息和服务的可视化交互开发平台，面向Web端和移动端提供了多种类型的SDK开发包。
     link: http://support.supermap.com.cn/
     target: "_blank"
   - title: <img src= "./imgs/mapgis.png" alt="MapGIS"  class="inline-block"/>
-    icon: 🤔
     details: 面向二次开发应用场景，提供支撑云+端应用开发所需的SDK和资源包，覆盖桌面端、浏览器端、移动端三端开发产品。
     link: https://mapgis.com/index.php?a=shows&catid=101&id=116
     target: "_blank"
 ---
+<script setup lang="ts">
+function getYiYan(){
+  fetch('https://v1.hitokoto.cn?c=d&max_length=16')
+    .then(res => res.json())
+    .then(data =>{
+      const footerMessage = document.querySelector('.VPFooter .message')
+      requestAnimationFrame(()=> footerMessage.innerText = data.hitokoto)
+    })
+    .catch(console.error)
+    setTimeout(getYiYan, 5000)
+}
+getYiYan()
+</script>

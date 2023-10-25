@@ -11,7 +11,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/example/markdown-examples' },
-      { text: 'API', link: '/api/api-examples' },
+      { text: 'SuperMap', link: '/supermap/'}
     ],
 
     sidebar: {
@@ -19,17 +19,52 @@ export default defineConfig({
         {
           text: 'Examples',
           items: [
-            { text: 'Markdown Examples', link: '/example/markdown-examples' },
-            { text: 'Runtime API Examples', link: '/api/api-examples' }
+            { text: 'WebGIS Examples', link: '/example/markdown-examples' }
           ]
         }
       ],
-      "api":[
+      "supermap":[
         {
-          text: 'API',
+          text: "SuperMap",
           items: [
-            { text: 'API Examples', link: '/api/api-examples' },
-            { text: "Markdown Examples", link:"/example/markdown-examples"}
+            { text: '基本介绍',
+              items:[
+                { text: 'SuperMap iServer 简介', link: '/supermap/intro/iserver' },
+                { text: 'JavaScript 简介', link: '/supermap/intro/javascript'},
+                { text: 'SuperMap iClient 简介', link: '/supermap/intro/iclient'}
+              ]
+            },
+            {
+              text: "环境配置",
+              items: [
+                { text:"SuperMap iServer配置", link: '/supermap/env/iserver'},
+                { text:"SQL Server 安装与配置", link: '/supermap/env/sqlserver'}
+              ]
+            },
+            {
+              text:"数据处理",
+              items:[
+                { text:"数据导入", link: '/supermap/data/input'},
+                { text:'坐标校正', link: '/supermap/data/coordinate'}
+              ]
+            },
+            {
+              text:'地图服务',
+              items:[
+                { text:'发布', link: '/supermap/services/direct'},
+                { text:'注册地理数据库', link: '/supermap/services/register'}
+              ]
+            },
+            {
+              text:'应用开发',
+              items:[
+                { text: '准备', link: '/supermap/app/prepare'},
+                { text: '加载', link: '/supermap/app/load'},
+                { text: '主页面', link: '/supermap/app/home'},
+                { text: '缓冲区', link: '/supermap/app/buffer'},
+                { text: '最短路径', link: '/supermap/app/sp'}
+              ]
+            }
           ]
         }
       ]
@@ -39,8 +74,8 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/DSYZayn' }
     ],
     footer: {
-      message: "©2023 GEST WebGIS. All rights reserved.",
-      copyright: "MIT Licensed | Copyright (c) 2021 GEST WebGIS"
+      message: "我的辫子长在头上，诸君的辫子长在心里。", 
+      copyright: "MIT Licensed | Copyright (c) 2023 GEST WebGIS"
     }
   }
 })

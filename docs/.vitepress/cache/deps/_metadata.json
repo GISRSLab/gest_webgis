@@ -1,19 +1,29 @@
 {
-  "hash": "628f7749",
-  "browserHash": "47bc577e",
+  "hash": "f40782a7",
+  "browserHash": "1006f693",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "873ee2d6",
+      "fileHash": "387dd2c7",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "9cb023ca",
+      "fileHash": "76104926",
       "needsInterop": false
+    },
+    "leaflet": {
+      "src": "../../../../node_modules/leaflet/dist/leaflet-src.js",
+      "file": "leaflet.js",
+      "fileHash": "f2372581",
+      "needsInterop": true
     }
   },
-  "chunks": {}
+  "chunks": {
+    "chunk-76J2PTFD": {
+      "file": "chunk-76J2PTFD.js"
+    }
+  }
 }
