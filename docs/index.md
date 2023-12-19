@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: WebGIS Examples
-      link: /example/markdown-examples
+      link: /supermap/more/
     - theme: alt
       text: SuperMap Docs
       link: /supermap/

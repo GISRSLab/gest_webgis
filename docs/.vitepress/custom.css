@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 取消所有SuperMap logo，避免bad route */
+:root .iclient-leaflet-logo{
+    display: none;
+}
