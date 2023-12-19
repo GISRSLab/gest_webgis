@@ -3,6 +3,7 @@ import { h } from 'vue'
 import { type Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import '../custom.css'
+import './style.css'
 import "leaflet/dist/leaflet.css"
 import '@supermap/iclient-leaflet/dist/iclient-leaflet.css'
 import 'element-plus/dist/index.css';

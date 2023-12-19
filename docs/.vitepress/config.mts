@@ -12,19 +12,10 @@ export default withMermaid({
     logo: '/imgs/logo.png',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/example/markdown-examples' },
       { text: 'SuperMap', link: '/supermap/'}
     ],
 
     sidebar: {
-      "example":[
-        {
-          text: 'Examples',
-          items: [
-            { text: 'WebGIS Examples', link: '/example/markdown-examples' }
-          ]
-        }
-      ],
       "supermap":[
         {
           text: "前言",
@@ -48,13 +39,6 @@ export default withMermaid({
               items: [
                 { text:"SuperMap iServer配置", link: '/supermap/env/iserver'},
                 { text: "vue3基础配置", link: '/supermap/env/vue3'}
-              ]
-            },
-            {
-              text:"数据处理",
-              items:[
-                { text:"数据导入", link: '/supermap/data/input'},
-                { text:'坐标校正', link: '/supermap/data/coordinate'}
               ]
             },
             {
