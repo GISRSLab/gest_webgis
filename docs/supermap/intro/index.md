@@ -1,7 +1,7 @@
 # SuperMap GIS 11i(2023) 简介
 ```mermaid
 graph TD;
-  a([...............................<img src="/imgs/supermap/01.png" width='250px' style='border-radius:20px' alt='11i-2023'>]) --> b(云GIS)
+  a([...............................<img src="./01.png" width='250px' style='border-radius:20px' alt='11i-2023'>]) --> b(云GIS)
   a --> c(边缘GIS)
   a --> d(端GIS)
   a --> e(SuperMap online)
