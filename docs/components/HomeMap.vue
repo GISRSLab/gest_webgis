@@ -42,7 +42,9 @@ function loadMap(key: string){
 }
 onMounted(() => {
     //加载地图
-    loadMap(import.meta.env.VITE_TXXXNDIT_KEY);
+    if(!import.meta.env.SSR){
+        loadMap(import.meta.env.VITE_TXXXNDIT_KEY);
+    }
 });
 const key = import.meta.env.VITE_TIANDITU_KEY;
 </script>

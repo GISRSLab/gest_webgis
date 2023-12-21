@@ -44,7 +44,7 @@ export default withMermaid({
             {
               text:'iServer服务',
               items:[
-                { text:'发布', link: '/supermap/services/direct'},
+                { text:'发布', link: '/supermap/services/publish'},
                 { text:'管理', link: '/supermap/services/manage'},
                 { text:'注册地理数据库', link: '/supermap/services/register'}
               ]

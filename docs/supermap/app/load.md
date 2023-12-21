@@ -1,11 +1,9 @@
 # 加载地图
 <script setup lang="ts">
 import {defineClientComponent} from 'vitepress'
-import ClientSuperMap from '../../components/SuperMap.vue';
 
-const ClientHomeMap = defineClientComponent(()=>{
-    return import('../../components/HomeMap.vue')
-})
+const ClientHomeMap = defineClientComponent(()=>import('../../components/HomeMap.vue'))
+const ClientSuperMap = defineClientComponent(()=>import("../../components/SuperMap.vue"))
 </script>
 ## 原生leaflet加载WMTS
 这里的代码有些长，不用担心，大部分都是为了规范化做出的牺牲。  
@@ -29,7 +27,7 @@ new Map("map", options)
 <<< ../../components/jsversion/HomeMap.vue
 <<< ../../composables/jsversion/Tianditu.js
 :::
-<div class="w-full h-96">
+<div class="w-full h-96 vp-raw">
     <ClientHomeMap />
 </div>
 
@@ -45,11 +43,9 @@ new Map("map", options)
 ::: code-group
 <<< ../../components/jsversion/SuperMap.vue
 :::
-<ClientOnly>
-    <div class="w-full h-[25rem] vp-raw">
-        <ClientSuperMap />
-    </div>
-</ClientOnly>
+<div class="w-full h-[25rem] vp-raw">
+    <ClientSuperMap />
+</div>
 
 ### 进阶
 :::tip

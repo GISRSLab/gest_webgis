@@ -6,7 +6,7 @@ hero:
   text: "Enjoy The Best Docs!"
   tagline: Documentation for GEST WebGIS
   image:
-    src: /imgs/avartar.webp
+    src: "/imgs/avartar.webp"
     alt: GEST WebGIS
   actions:
     - theme: brand
@@ -31,17 +31,8 @@ features:
     target: "_blank"
 ---
 <script setup lang="ts">
-function getYiYan(){
-  fetch('https://v1.hitokoto.cn?c=d&max_length=16')
-    .then(res => res.json())
-    .then(data =>{
-      const footerMessage = document.querySelector('.VPFooter .message')
-      requestAnimationFrame(()=> footerMessage.innerText = data.hitokoto)
-    })
-    .catch(console.error)
-    setTimeout(getYiYan, 5000)
-}
-if(!import.meta.env.SSR){
-  getYiYan()
-} 
+import {defineClientComponent} from 'vitepress';
+
+const ClientYiYan = defineClientComponent(()=>import("./components/YiYan.vue"));
 </script>
+<ClientYiYan />

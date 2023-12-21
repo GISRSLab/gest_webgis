@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { onMounted} from 'vue';
+import { withBase } from 'vitepress';
 import {Map, GeoJSON, Bounds, Point, Marker, Icon, LatLng} from 'leaflet';
 import { TiledMapLayer, NonEarthCRS, NetworkAnalystService, FindPathParameters,TransportationAnalystParameter, TransportationAnalystResultSetting} from '@supermap/iclient-leaflet';
 import {ElNotification, ElButton} from 'element-plus';
@@ -77,7 +78,7 @@ const findPathParams = new FindPathParameters({
 const serviceUrl = "https://iserver.supermap.io/iserver/services/transportationanalyst-sample/rest/networkanalyst/RoadNet@Changchun";
 const findPathService = new NetworkAnalystService(serviceUrl);
 const myIcon = new Icon({
-                iconUrl: "/imgs/logo.png",
+                iconUrl: withBase("/imgs/logo.png"),
                 iconSize: [20, 20]
             });
 // 向服务器发送请求，并对返回的结果进行分析处理，展示在客户端上

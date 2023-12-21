@@ -6,3 +6,6 @@
 :root .iclient-leaflet-logo{
     display: none;
 }
+.el-button{
+    background-color: var(--el-button-bg-color) !important;
+}
