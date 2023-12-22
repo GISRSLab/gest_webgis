@@ -93,7 +93,7 @@ function resolveCircle(layer:any){
 </script>
 
 <template>
-    <div id="measure" class="w-full h-full">
+    <div id="measure" class="w-full h-full z-0">
         
     </div>
 </template>
