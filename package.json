@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "scripts": {
     "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "build": "vitepress build docs && cp ./docs/.env ./docs/.vitepress/dist",
     "preview": "vitepress preview docs"
   },
   "devDependencies": {
