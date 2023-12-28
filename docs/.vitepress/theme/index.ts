@@ -9,6 +9,7 @@ import "leaflet/dist/leaflet.css"
 import '@supermap/iclient-leaflet/dist/iclient-leaflet.css'
 import 'element-plus/dist/index.css';
 import 'vitepress-markdown-timeline/dist/theme/index.css'
+import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css'
 
 export default {
   extends: DefaultTheme,

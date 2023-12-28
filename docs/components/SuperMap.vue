@@ -2,7 +2,6 @@
 import {Map, CRS, ControlPosition} from 'leaflet';
 import { onMounted } from 'vue';
 import { TiledMapLayer } from '@supermap/iclient-leaflet';
-import "@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css"
 import "@geoman-io/leaflet-geoman-free"
 
 const url = "https://iserver.supermap.io/iserver/services/map-world/rest/maps/World";

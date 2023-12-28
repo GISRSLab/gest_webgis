@@ -3,7 +3,7 @@ import {onMounted} from 'vue';
 import {Map, CRS, ControlPosition, Polygon, Polyline, PM, LatLng,Circle } from 'leaflet';
 import {TiledMapLayer, MeasureService, MeasureParameters} from '@supermap/iclient-leaflet';
 import '@geoman-io/leaflet-geoman-free'
-import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css'
+// import '@geoman-io/leaflet-geoman-free/dist/leaflet-geoman.css'
 
 const url = "https://iserver.supermap.io/iserver/services/map-world/rest/maps/World";
 

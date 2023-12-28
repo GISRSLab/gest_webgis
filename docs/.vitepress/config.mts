@@ -14,7 +14,9 @@ export default withMermaid({
       { text: 'Home', link: '/' },
       { text: 'SuperMap', link: '/supermap/'}
     ],
-
+    search:{
+      provider: 'local'
+    },
     sidebar: {
       "supermap":[
         {
@@ -65,13 +67,16 @@ export default withMermaid({
         }
       ]
     },
-
+    editLink:{
+      pattern: 'https://github.com/DSYZayn/gest_webgis/edit/main/docs/:path'
+    },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/DSYZayn' }
+      { icon: 'github', link: 'https://github.com/DSYZayn/gest_webgis' },
+      { icon: 'discord', link: 'https://discord.gg/BXUxTPA6'}
     ],
     footer: {
       message: "我的辫子长在头上，诸君的辫子长在心里。", 
-      copyright: "MIT Licensed | Copyright (c) 2023 GEST WebGIS"
+      copyright: "MIT Licensed | Copyright © 2023 GEST WebGIS"
     }
   },
   mermaid:{},
@@ -89,7 +94,8 @@ export default withMermaid({
     }
   },
   vite:{
-    assetsInclude:['**/*.awebp'],
-  }
+    assetsInclude:['**/*.awebp']
+ },
+  lastUpdated: true
 })
 

@@ -4,7 +4,6 @@ import { withBase } from 'vitepress';
 import {Map, GeoJSON, Bounds, Point, Marker, Icon, LatLng} from 'leaflet';
 import { TiledMapLayer, NonEarthCRS, NetworkAnalystService, FindPathParameters,TransportationAnalystParameter, TransportationAnalystResultSetting} from '@supermap/iclient-leaflet';
 import {ElNotification, ElButton} from 'element-plus';
-import 'element-plus/dist/index.css';
 const url = "https://iserver.supermap.io/iserver/services/map-changchun/rest/maps/长春市区图";
 let _map: L.Map;
 let _analyseLayers:L.GeoJSON[] = [];
