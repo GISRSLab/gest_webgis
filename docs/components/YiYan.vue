@@ -25,9 +25,7 @@ async function typing(str:string):Promise<string>{
 if(!import.meta.env.SSR){
   let timer = undefined;
   onMounted(async ()=>{
-    await getYiYan()
     timer = setInterval(getYiYan, 5000);
-
   });
   onUnmounted(()=>timer?clearInterval(timer):void(0));
 } 
