@@ -1,6 +1,6 @@
 {
   "name": "gest_webgis",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vitepress dev docs",
     "build": "vitepress build docs && cp ./docs/.env ./docs/.vitepress/dist",
