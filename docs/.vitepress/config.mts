@@ -7,6 +7,9 @@ export default withMermaid({
   title: "GEST WebGIS",
   description: "The Best Course Docs!",
   base: '/gest_webgis/',
+  sitemap:{
+    hostname: 'https://dsyzayn.github.io/gest_webgis'
+  },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo: '/imgs/logo.png',
@@ -68,7 +71,8 @@ export default withMermaid({
       ]
     },
     editLink:{
-      pattern: 'https://github.com/DSYZayn/gest_webgis/edit/main/docs/:path'
+      pattern: 'https://github.com/DSYZayn/gest_webgis/edit/main/docs/:path',
+      text: 'Suggest changes to this page'
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/DSYZayn/gest_webgis' },
@@ -95,7 +99,7 @@ export default withMermaid({
   },
   vite:{
     assetsInclude:['**/*.awebp']
- },
+  },
   lastUpdated: true
 })
 
