@@ -53,7 +53,19 @@ const attention = h('div', null,[
   h('a', {
     href:"https://cxy2003.gitee.io/gest_webgis",
     target:'_self'
-  },"https://cxy2003.gitee.io/gest_webgis")
+  },"https://cxy2003.gitee.io/gest_webgis"),
+  h('br'),
+  h('a',null,'评论系统暂无法使用'),
+  h('br'),
+  h('p',{
+    style:{
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      fontSize: '1.5rem',
+      fontWeight: 'bold'
+    }
+  },"2024新年快乐！🎉")
 ])
 if(!sessionStorage.getItem("first_visit")){
   ElMessageBox.alert(attention, '温馨提示', {});

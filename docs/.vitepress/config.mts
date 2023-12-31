@@ -80,7 +80,7 @@ export default withMermaid({
     ],
     footer: {
       message: "我的辫子长在头上，诸君的辫子长在心里。", 
-      copyright: "MIT Licensed | Copyright © 2023 GEST WebGIS"
+      copyright: "MIT Licensed | Copyright © 2023-2024 GEST WebGIS"
     }
   },
   mermaid:{},
