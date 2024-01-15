@@ -55,7 +55,7 @@ const attention = h('div', null,[
     target:'_self'
   },"https://cxy2003.gitee.io/gest_webgis"),
   h('br'),
-  h('a',null,'评论系统暂无法使用'),
+  //h('a',null,'评论系统暂无法使用'),
   h('br'),
   h('p',{
     style:{
