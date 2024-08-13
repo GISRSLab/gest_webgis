@@ -32,4 +32,5 @@ I recommend using [Visual Studio Code](https://code.visualstudio.com/) as the ed
 > `pnpm` may cause unexpected issues, if you encounter any problems, please use `npm` instead or feel free to open an issue.
 
 # contribute
+
 The project is open to contributions, please feel free to open issues and submit pull requests.
